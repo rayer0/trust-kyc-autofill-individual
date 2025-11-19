@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust KYC Autofill (Individual)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Trust KYC Autofill (Individual)</h1>
+      <section class="card">
+        <h2>Upload document</h2>
+        <form id="upload-form">
+          <input type="file" id="file-input" accept=".pdf,.docx,.png,.jpg,.jpeg,.txt" />
+          <button type="submit">Process</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Extracted Text</h2>
+        <textarea id="extracted-text" rows="8"></textarea>
+        <button id="generate-btn">Generate profile</button>
+      </section>
+
+      <section class="card" id="results"></section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
